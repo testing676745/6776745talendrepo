@@ -1,0 +1,89 @@
+{
+  "id": "$replicate$dbo_item",
+  "name": "dbo_ITEM",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "ITEM",
+    "dbSchema": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.schema}}",
+    "dbName": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "Item_Key",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "item_key",
+        "flags": "NONE"
+      },
+      {
+        "name": "Item_Name",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "item_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "Brand",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "brand",
+        "flags": "NONE"
+      },
+      {
+        "name": "Sold_By",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sold_by",
+        "flags": "NONE"
+      },
+      {
+        "name": "Category",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "category",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

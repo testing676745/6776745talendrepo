@@ -1,0 +1,6 @@
+{
+  "name": "Semi Warehouse",
+  "id": "semi_warehouse-iepi",
+  "description": "Centralized  Warehouse using  Macros",
+  "type": "TRANSFORM"
+}

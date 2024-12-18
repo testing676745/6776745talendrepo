@@ -1,0 +1,59 @@
+{
+  "id": "$replicate$dbo_testing_names",
+  "name": "dbo_Testing_Names",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Testing_Names",
+    "dbSchema": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.schema}}",
+    "dbName": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Name",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "name",
+        "flags": "NONE"
+      },
+      {
+        "name": "DateCreated",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "datecreated",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

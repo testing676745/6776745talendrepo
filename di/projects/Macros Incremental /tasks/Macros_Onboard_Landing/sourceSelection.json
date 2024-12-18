@@ -1,0 +1,63 @@
+{
+  "sourceConnection": "{{task.macros_onboard_landing-xxy-.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "BSEG",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_bseg"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "BRANCH",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_branch"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "ITEM",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_item"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "LOCATION",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_location"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "Sales_Fact",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_sales_fact"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "Testing_Names",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_testing_names"
+    },
+    {
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}",
+      "name": "TIME",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_time"
+    }
+  ]
+}

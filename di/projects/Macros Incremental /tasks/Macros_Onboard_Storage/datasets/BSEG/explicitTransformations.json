@@ -1,0 +1,41 @@
+{
+  "transformedTableLocal": {
+    "newTableName": "BSEG-Onboard",
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "BELNR",
+        "newColumnName": "BELNR",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "HKONT",
+        "newColumnName": "HKONT",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "bseg-xxzb",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "BSEG",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "BSEG",
+  "id": "bseg-hpn6",
+  "description": ""
+}

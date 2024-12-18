@@ -1,0 +1,21 @@
+{
+  "id": "testing_names-xjr3",
+  "name": "Testing_Names",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "testing_names",
+      "name": "Testing_Names",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_landing-xxy-"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

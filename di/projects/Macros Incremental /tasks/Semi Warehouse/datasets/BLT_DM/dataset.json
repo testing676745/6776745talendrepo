@@ -1,0 +1,206 @@
+{
+  "id": "decentralized-9uic",
+  "name": "BLT_DM",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "branch-xjry",
+      "name": "BRANCH",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    },
+    {
+      "datasetId": "employees-xjrz",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    },
+    {
+      "datasetId": "item-xjr0",
+      "name": "ITEM",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    },
+    {
+      "datasetId": "location-xjr1",
+      "name": "LOCATION",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    },
+    {
+      "datasetId": "sales_fact-xjr2",
+      "name": "Sales_Fact",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    },
+    {
+      "datasetId": "testing_names-xjr3",
+      "name": "Testing_Names",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "BLT_DM",
+    "columns": [
+      {
+        "name": "Branch_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "branch_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Branch_NM",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(100)"
+        },
+        "id": "branch_nm",
+        "flags": "NONE"
+      },
+      {
+        "name": "Owner",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(100)"
+        },
+        "id": "owner",
+        "flags": "NONE"
+      },
+      {
+        "name": "Location_ID",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "location_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Name",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(100)"
+        },
+        "id": "name",
+        "flags": "NONE"
+      },
+      {
+        "name": "State",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(100)"
+        },
+        "id": "state",
+        "flags": "NONE"
+      },
+      {
+        "name": "Pincode",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "pincode",
+        "flags": "NONE"
+      },
+      {
+        "name": "Time_ID",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "time_id",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "SELECT \n    b.\u0022Branch_ID\u0022,\n    b.\u0022Branch_NM\u0022,\n    b.\u0022Owner\u0022,\n    l.\u0022Location_ID\u0022,\n    l.\u0022Name\u0022,\n    l.\u0022State\u0022,\n    l.\u0022Pincode\u0022,\n    t.\u0022Time_ID\u0022\nFROM \n    ${BRANCH} b\nJOIN \n    ${LOCATION} l ON b.\u0022Branch_ID\u0022 = l.\u0022Location_ID\u0022 \nJOIN \n${Sales_Fact} t ON t.\u0022Branch_ID\u0022  = b.\u0022Branch_ID\u0022\n\n{{#QLIK_FUNC_IF Q_RUN_INITIAL_LOAD}}\n\n\nWhere t.\u0022Time_ID\u0022 = (SELECT MAX(\u0022Time_ID\u0022) FROM ${Sales_Fact} )\n  \n{{/QLIK_FUNC_IF}}",
+      "alias": [
+        {
+          "name": "BRANCH",
+          "value": "{{ref(project.current.projectId)}}$_$macros_onboard_storage-xxy_$_$branch-xjry"
+        },
+        {
+          "name": "LOCATION",
+          "value": "{{ref(project.current.projectId)}}$_$macros_onboard_storage-xxy_$_$location-xjr1"
+        },
+        {
+          "name": "Sales_Fact",
+          "value": "{{ref(project.current.projectId)}}$_$macros_onboard_storage-xxy_$_$sales_fact-xjr2"
+        }
+      ]
+    },
+    "incremental": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "$replicate$dbo_time",
+  "name": "dbo_TIME",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "TIME",
+    "dbSchema": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.schema}}",
+    "dbName": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "Time_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "time_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Day",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "day",
+        "flags": "NONE"
+      },
+      {
+        "name": "Month",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "month",
+        "flags": "NONE"
+      },
+      {
+        "name": "Quarter",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "quarter",
+        "flags": "NONE"
+      },
+      {
+        "name": "Year",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "year",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

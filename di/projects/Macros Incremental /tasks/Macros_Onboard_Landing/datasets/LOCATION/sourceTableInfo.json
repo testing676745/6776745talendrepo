@@ -1,0 +1,74 @@
+{
+  "id": "$replicate$dbo_location",
+  "name": "dbo_LOCATION",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "LOCATION",
+    "dbSchema": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.schema}}",
+    "dbName": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "Location_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "location_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Name",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "name",
+        "flags": "NONE"
+      },
+      {
+        "name": "State",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "state",
+        "flags": "NONE"
+      },
+      {
+        "name": "Pincode",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pincode",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

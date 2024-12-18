@@ -1,0 +1,70 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.macros_onboard_storage-xxy_:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "BRANCH",
+      "type": "NONE",
+      "sourceTableId": "branch"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "BSEG",
+      "type": "NONE",
+      "sourceTableId": "bseg"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "ITEM",
+      "type": "NONE",
+      "sourceTableId": "item"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "LOCATION",
+      "type": "NONE",
+      "sourceTableId": "location"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "Sales_Fact",
+      "type": "NONE",
+      "sourceTableId": "sales_fact"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "Testing_Names",
+      "type": "NONE",
+      "sourceTableId": "testing_names"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "macros_onboard_landing-xxy-",
+      "name": "TIME",
+      "type": "NONE",
+      "sourceTableId": "time"
+    }
+  ]
+}

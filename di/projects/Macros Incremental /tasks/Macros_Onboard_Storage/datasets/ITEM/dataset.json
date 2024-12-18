@@ -1,0 +1,21 @@
+{
+  "id": "item-xjr0",
+  "name": "ITEM",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "item",
+      "name": "ITEM",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_landing-xxy-"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

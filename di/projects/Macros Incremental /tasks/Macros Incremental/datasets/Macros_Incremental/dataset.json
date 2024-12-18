@@ -1,0 +1,39 @@
+{
+  "id": "macros_incremental-9tzw",
+  "name": "Macros_Incremental",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "bseg-xxzb",
+      "name": "BSEG-Incremental_load1",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_storage-xxy_"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Macros_Incremental",
+    "columns": [],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "Select * FROM ${BSEG-Incremental_load1}\n{{#QLIK_FUNC_IF Q_RUN_INITIAL_LOAD}}\nWHERE BUDAT =\u00272023-01-01\u0027\n{{/QLIK_FUNC_IF}}",
+      "alias": [
+        {
+          "name": "BSEG-Incremental_load1",
+          "value": "{{ref(project.current.projectId)}}$_$macros_onboard_storage-xxy_$_$bseg-xxzb"
+        }
+      ]
+    },
+    "incremental": true
+  }
+}

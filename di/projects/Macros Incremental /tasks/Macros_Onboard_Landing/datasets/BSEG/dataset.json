@@ -1,0 +1,15 @@
+{
+  "id": "bseg",
+  "name": "BSEG",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_bseg",
+      "name": "BSEG",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "macros_onboard_landing-xxy-",
+      "schema": "{{task.macros_onboard_landing-xxy-:null$_$dbo.schema}}",
+      "database": "{{task.macros_onboard_landing-xxy-:null$_$dbo.database}}"
+    }
+  ]
+}

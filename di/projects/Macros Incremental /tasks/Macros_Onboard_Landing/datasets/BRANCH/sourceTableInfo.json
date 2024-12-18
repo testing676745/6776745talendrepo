@@ -1,0 +1,59 @@
+{
+  "id": "$replicate$dbo_branch",
+  "name": "dbo_BRANCH",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "BRANCH",
+    "dbSchema": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.schema}}",
+    "dbName": "{{task.macros_onboard_landing-xxy-:CP_DB$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "Branch_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "branch_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Branch_NM",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "branch_nm",
+        "flags": "NONE"
+      },
+      {
+        "name": "Owner",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "owner",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
